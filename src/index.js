@@ -13,7 +13,6 @@ const API_KEY = 'AIzaSyCcZMc3oluWWr_zpDplDcwsv7M0AGEkMJs'
 class App extends Component {
     constructor(props) {
         super(props)
-
         this.state = { 
             videos: [],
             selectedVideo: null

@@ -3,9 +3,7 @@ import React from 'react'
 const VideoDetail = ({video}) => {
 
     if (!video){
-        return (
-            <div>Loading...</div>
-        )
+        return ( <div>Loading...</div> )
     }
 
     const videoID = video.id.videoID
@@ -14,7 +12,9 @@ const VideoDetail = ({video}) => {
     // const url = `https://www.youtube.com/embed/` + videoID
     return(
         <div className={'video-detail col-md-8'}>
-            <div className={'embed-responsive embed-reponsive-16by9'}>
+            <div className={'embed-responsive embed-responsive-16by9'}>
+            <button onPress={console.log(video)}></button>
+            <button onPress={console.log(videoID)}></button>
                 <iframe className={'embed-responsive-item'} src={url}></iframe>
             </div>
             <div className={'details'}>
